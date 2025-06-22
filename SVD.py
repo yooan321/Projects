@@ -15,13 +15,13 @@ r, c = trainlab.shape
 
 #function that outputs the index of a given digit with given number of integers wanted from train labels
 def imdig(dig, num):
-    coun = []
+    count = []
     for i in range(c):
         if trainlab[:, i][0] == dig:
-            coun.append(i)
-        elif len(coun) > num - 1:
+            count.append(i)
+        elif len(count) > num - 1:
             break
-    return coun
+    return count
 
 #matrices with the index from label set
 matrices = {}
